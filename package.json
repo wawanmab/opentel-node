@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start:simple": "npx ts-node --require ./simple/instrumentation.ts ./simple/app.ts",
+    "start:tracing": "npx ts-node --require ./tracing/instrumentation.ts ./tracing/app.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

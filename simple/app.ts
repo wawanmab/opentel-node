@@ -11,6 +11,10 @@ app.get('/rolldice', (req, res) => {
   res.send(getRandomNumber(1, 6).toString());
 });
 
+app.get('/', (req, res) => {
+  res.send('Running!!')
+});
+
 app.listen(PORT, () => {
   console.log(`Listening for requests on http://localhost:${PORT}`);
 });

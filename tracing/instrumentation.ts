@@ -19,7 +19,7 @@ const resource = defaultResource().merge(
   }),
 );
 
-const exporter = new ConsoleSpanExporter();
+const exporter = new ConsoleSpanExporter(); // export to console
 const processor = new BatchSpanProcessor(exporter);
 
 const provider = new WebTracerProvider({
